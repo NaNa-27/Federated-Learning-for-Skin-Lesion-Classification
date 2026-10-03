@@ -1,0 +1,37 @@
+{
+  "metadata_rows": 10015,
+  "unique_image_ids": 10015,
+  "unique_lesions": 7470,
+  "multi_image_lesions": 1956,
+  "random_seed": 42,
+  "split_unit": "lesion_id",
+  "target_lesion_ratio": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "image_counts": {
+    "train": 7002,
+    "val": 1532,
+    "test": 1481
+  },
+  "lesion_counts": {
+    "train": 5229,
+    "val": 1120,
+    "test": 1121
+  },
+  "ground_truth_class_counts": {
+    "nv": 6705,
+    "mel": 1113,
+    "bkl": 1099,
+    "bcc": 514,
+    "akiec": 327,
+    "vasc": 142,
+    "df": 115
+  },
+  "lesion_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}
