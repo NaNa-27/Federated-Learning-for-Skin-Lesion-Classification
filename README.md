@@ -1,1 +1,1 @@
-# Federated-Learning-for-Skin-Lesion-Classification
+# Skin-Lesion-Classification

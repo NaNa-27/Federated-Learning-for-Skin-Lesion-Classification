@@ -1,0 +1,77 @@
+{
+  "protocol_version": "v2",
+  "metadata_rows": 10015,
+  "unique_image_ids": 10015,
+  "unique_lesions": 7470,
+  "multi_image_lesions": 1956,
+  "random_seed": 42,
+  "split_unit": "lesion_id",
+  "split_rule": "train_test_split on lesions, stratify=dx, 70/15/15, no post-hoc adjustment",
+  "target_lesion_ratio": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "image_counts": {
+    "train": 6981,
+    "val": 1532,
+    "test": 1502
+  },
+  "lesion_counts": {
+    "train": 5229,
+    "val": 1120,
+    "test": 1121
+  },
+  "class_by_split": {
+    "train": {
+      "nv": 4683,
+      "mel": 773,
+      "bkl": 772,
+      "bcc": 361,
+      "akiec": 222,
+      "vasc": 99,
+      "df": 71
+    },
+    "val": {
+      "nv": 1018,
+      "mel": 173,
+      "bkl": 160,
+      "bcc": 82,
+      "akiec": 53,
+      "vasc": 22,
+      "df": 24
+    },
+    "test": {
+      "nv": 1004,
+      "mel": 167,
+      "bkl": 167,
+      "bcc": 71,
+      "akiec": 52,
+      "vasc": 21,
+      "df": 20
+    }
+  },
+  "ground_truth_class_counts": {
+    "nv": 6705,
+    "mel": 1113,
+    "bkl": 1099,
+    "bcc": 514,
+    "akiec": 327,
+    "vasc": 142,
+    "df": 115
+  },
+  "lesion_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "manifest_sha256": "bda53d198ff403653548b8f072116e78350067417ddf41ec3e342f034bf464d7",
+  "manifest_sha256_definition": "SHA-256 of [image_id, lesion_id, dx, split] sorted by image_id, CSV without index, LF line endings",
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0"
+  }
+}

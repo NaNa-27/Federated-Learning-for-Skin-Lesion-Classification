@@ -1,0 +1,4 @@
+split,images,lesions,lesion_ratio_pct,image_ratio_pct
+train,6981,5229,70.0,69.71
+val,1532,1120,14.99,15.3
+test,1502,1121,15.01,15.0

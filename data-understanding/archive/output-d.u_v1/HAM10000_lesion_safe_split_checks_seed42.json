@@ -33,5 +33,23 @@
     "train_val": 0,
     "train_test": 0,
     "val_test": 0
+  },
+  "rebalance": {
+    "method": "whole-lesion, same-dx swaps to fixed image totals",
+    "target_image_counts": {
+      "train": 7002,
+      "val": 1532,
+      "test": 1481
+    },
+    "iterations": 6
+  },
+  "manifest_sha256": "f02455a2bea7cd352dd99d32f528b0268141d1601b0b6bed3c7155cef1abed74",
+  "manifest_sha256_definition": "SHA-256 of [image_id, lesion_id, dx, split] sorted by image_id, CSV without index, '\\n' line endings",
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0"
   }
 }
