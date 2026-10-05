@@ -1,0 +1,10 @@
+lesion_id,n_clients,n_splits,n_images,dx,split,clients
+HAM_0000492,2,1,3,mel,val,vidir_modern + vidir_molemax
+HAM_0000871,2,1,3,mel,train,vidir_modern + vidir_molemax
+HAM_0001726,2,1,3,mel,test,vidir_modern + vidir_molemax
+HAM_0002534,2,1,3,mel,val,vidir_modern + vidir_molemax
+HAM_0003194,2,1,2,mel,val,vidir_modern + vidir_molemax
+HAM_0003558,2,1,3,mel,train,vidir_modern + vidir_molemax
+HAM_0004979,2,1,3,mel,train,vidir_modern + vidir_molemax
+HAM_0005481,2,1,3,mel,train,vidir_modern + vidir_molemax
+HAM_0006453,2,1,3,mel,test,vidir_modern + vidir_molemax

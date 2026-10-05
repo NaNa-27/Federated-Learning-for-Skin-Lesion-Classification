@@ -1,0 +1,91 @@
+{
+  "partition_version": "v1",
+  "split_protocol": "v2 (frozen lesion split, seed 42)",
+  "split_manifest_sha256": "bda53d198ff403653548b8f072116e78350067417ddf41ec3e342f034bf464d7",
+  "client_definition": "HAM10000 metadata column 'dataset' (acquisition source)",
+  "clients": {
+    "vidir_molemax": {
+      "images": 3954,
+      "lesions": 3954
+    },
+    "vidir_modern": {
+      "images": 3363,
+      "lesions": 1695
+    },
+    "rosendahl": {
+      "images": 2259,
+      "lesions": 1552
+    },
+    "vienna_dias": {
+      "images": 439,
+      "lesions": 278
+    }
+  },
+  "client_class_counts": {
+    "vidir_molemax": {
+      "nv": 3720,
+      "mel": 24,
+      "bkl": 124,
+      "bcc": 2,
+      "akiec": 0,
+      "vasc": 54,
+      "df": 30
+    },
+    "vidir_modern": {
+      "nv": 1832,
+      "mel": 680,
+      "bkl": 475,
+      "bcc": 211,
+      "akiec": 32,
+      "vasc": 82,
+      "df": 51
+    },
+    "rosendahl": {
+      "nv": 803,
+      "mel": 342,
+      "bkl": 490,
+      "bcc": 296,
+      "akiec": 295,
+      "vasc": 3,
+      "df": 30
+    },
+    "vienna_dias": {
+      "nv": 350,
+      "mel": 67,
+      "bkl": 10,
+      "bcc": 5,
+      "akiec": 0,
+      "vasc": 3,
+      "df": 4
+    }
+  },
+  "classes_missing_in_client_train": {
+    "vidir_molemax": [
+      "bcc",
+      "akiec"
+    ],
+    "vidir_modern": [],
+    "rosendahl": [],
+    "vienna_dias": [
+      "akiec"
+    ]
+  },
+  "cross_source_lesions": {
+    "lesions": 9,
+    "images": 26,
+    "all_in_single_split": true
+  },
+  "primary_evaluation": "pooled val/test across clients",
+  "excluded_from_model_inputs": [
+    "dataset",
+    "dx_type"
+  ],
+  "fl_manifest_sha256": "0ab49e23b128c7d9f2d309bee762ade1d6ab69f04a31ca94096f29484c9a033d",
+  "fl_manifest_sha256_definition": "SHA-256 of [image_id, lesion_id, dx, split, client] sorted by image_id, CSV without index, LF line endings",
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.3",
+    "pandas": "2.3.3"
+  }
+}

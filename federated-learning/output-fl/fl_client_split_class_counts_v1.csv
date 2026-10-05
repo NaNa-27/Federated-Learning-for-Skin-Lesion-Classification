@@ -1,0 +1,13 @@
+client,split,nv,mel,bkl,bcc,akiec,vasc,df,total
+vidir_molemax,train,2602,13,82,0,0,38,27,2762
+vidir_molemax,val,555,4,23,0,0,10,0,592
+vidir_molemax,test,563,7,19,2,0,6,3,600
+vidir_modern,train,1308,449,340,151,24,57,27,2356
+vidir_modern,val,259,121,63,27,7,12,12,501
+vidir_modern,test,265,110,72,33,1,13,12,506
+rosendahl,train,537,250,343,208,198,2,15,1553
+rosendahl,val,148,47,72,53,46,0,10,376
+rosendahl,test,118,45,75,35,51,1,5,330
+vienna_dias,train,236,61,7,2,0,2,2,310
+vienna_dias,val,56,1,2,2,0,0,2,63
+vienna_dias,test,58,5,1,1,0,1,0,66
