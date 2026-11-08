@@ -1,0 +1,10 @@
+{
+  "rule": "higher pooled-val macro-F1; ResNet18 if |diff| < 0.02",
+  "val_macro_f1": {
+    "resnet18": 0.6003,
+    "efficientnet_b0": 0.7583
+  },
+  "diff_effnet_minus_resnet": 0.158,
+  "primary": "efficientnet_b0",
+  "secondary": "resnet18"
+}

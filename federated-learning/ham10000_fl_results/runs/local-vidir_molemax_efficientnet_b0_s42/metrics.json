@@ -1,0 +1,269 @@
+{
+  "run": "local-vidir_molemax_efficientnet_b0_s42",
+  "arm": "local",
+  "client": "vidir_molemax",
+  "backbone": "efficientnet_b0",
+  "seed": 42,
+  "mu": null,
+  "epochs_budget": 20,
+  "rounds": null,
+  "local_epochs": null,
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "optimizer": "SGD nesterov, cosine schedule",
+  "loss": "cross-entropy, inverse-sqrt class weights (pooled train)",
+  "class_weights": {
+    "nv": 0.2404008610567248,
+    "mel": 0.591709239489407,
+    "bkl": 0.5920923468390223,
+    "bcc": 0.865853659478211,
+    "akiec": 1.1041335603272442,
+    "vasc": 1.6534097734867326,
+    "df": 1.9524005593226579
+  },
+  "n_train_images": 2762,
+  "best_step": 8,
+  "selection": "best pooled-val macro-F1",
+  "val": {
+    "macro_f1": 0.32744514536247415,
+    "balanced_accuracy": 0.4100626217143785,
+    "accuracy": 0.5789817232375979,
+    "per_class": {
+      "nv": {
+        "precision": 0.9291666666666667,
+        "recall": 0.6571709233791748,
+        "f1": 0.7698504027617953,
+        "support": 1018
+      },
+      "mel": {
+        "precision": 0.3969465648854962,
+        "recall": 0.30057803468208094,
+        "f1": 0.3421052631578947,
+        "support": 173
+      },
+      "bkl": {
+        "precision": 0.23214285714285715,
+        "recall": 0.89375,
+        "f1": 0.36855670103092786,
+        "support": 160
+      },
+      "bcc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 82
+      },
+      "akiec": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 53
+      },
+      "vasc": {
+        "precision": 0.43243243243243246,
+        "recall": 0.7272727272727273,
+        "f1": 0.5423728813559323,
+        "support": 22
+      },
+      "df": {
+        "precision": 0.25,
+        "recall": 0.2916666666666667,
+        "f1": 0.2692307692307692,
+        "support": 24
+      }
+    },
+    "confusion_matrix": [
+      [
+        669,
+        71,
+        254,
+        0,
+        0,
+        16,
+        8
+      ],
+      [
+        26,
+        52,
+        93,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        8,
+        6,
+        143,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        6,
+        0,
+        68,
+        0,
+        0,
+        5,
+        3
+      ],
+      [
+        6,
+        1,
+        44,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        16,
+        3
+      ],
+      [
+        5,
+        1,
+        11,
+        0,
+        0,
+        0,
+        7
+      ]
+    ]
+  },
+  "test": {
+    "macro_f1": 0.300724058464184,
+    "balanced_accuracy": 0.37069622848781664,
+    "accuracy": 0.5765645805592543,
+    "per_class": {
+      "nv": {
+        "precision": 0.9255172413793104,
+        "recall": 0.6683266932270916,
+        "f1": 0.7761711972238288,
+        "support": 1004
+      },
+      "mel": {
+        "precision": 0.3023255813953488,
+        "recall": 0.15568862275449102,
+        "f1": 0.20553359683794467,
+        "support": 167
+      },
+      "bkl": {
+        "precision": 0.23483670295489892,
+        "recall": 0.9041916167664671,
+        "f1": 0.3728395061728395,
+        "support": 167
+      },
+      "bcc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 71
+      },
+      "akiec": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 52
+      },
+      "vasc": {
+        "precision": 0.4375,
+        "recall": 0.6666666666666666,
+        "f1": 0.5283018867924528,
+        "support": 21
+      },
+      "df": {
+        "precision": 0.25,
+        "recall": 0.2,
+        "f1": 0.22222222222222224,
+        "support": 20
+      }
+    },
+    "confusion_matrix": [
+      [
+        671,
+        55,
+        263,
+        0,
+        0,
+        11,
+        4
+      ],
+      [
+        28,
+        26,
+        109,
+        0,
+        0,
+        2,
+        2
+      ],
+      [
+        14,
+        1,
+        151,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        1,
+        59,
+        0,
+        0,
+        5,
+        2
+      ],
+      [
+        4,
+        0,
+        45,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        3,
+        3,
+        1,
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        1,
+        0,
+        15,
+        0,
+        0,
+        0,
+        4
+      ]
+    ]
+  },
+  "train_seconds": 195.58058524131775,
+  "peak_gpu_mem_gb": 5.686182912,
+  "debug_n": 0,
+  "env": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "torchvision": "0.26.0+cu130",
+    "gpu": "Tesla T4",
+    "cuda": "13.0"
+  }
+}

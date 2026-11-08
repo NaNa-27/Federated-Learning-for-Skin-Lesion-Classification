@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Pooled-test results (efficientnet_b0, 3 seeds, equal training budget). CIs: 95\% bootstrap over test lesions.}
+\label{tab:main_results}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccc}
+\hline
+Arm & Macro-F1 & 95\% CI & Gap vs. central. & Bal. acc. & Acc. \\
+\hline
+Centralized & 0.715 $\pm$ 0.012 & [0.669, 0.752] & -- & 0.706 & 0.834 \\
+Local-only & 0.380 $\pm$ 0.005 & [0.353, 0.396] & -0.336 [-0.368, -0.302] & 0.414 & 0.673 \\
+FedAvg & 0.624 $\pm$ 0.006 & [0.569, 0.668] & -0.091 [-0.129, -0.050] & 0.634 & 0.781 \\
+FedProx ($\mu$=0.001) & 0.636 $\pm$ 0.021 & [0.577, 0.680] & -0.080 [-0.120, -0.038] & 0.640 & 0.791 \\
+\hline
+\end{tabular}
+\end{table}

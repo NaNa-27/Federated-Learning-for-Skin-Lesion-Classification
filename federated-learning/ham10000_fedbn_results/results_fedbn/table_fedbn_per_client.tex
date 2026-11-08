@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{Secondary analysis: Macro-F1 of each client's model on that client's own test images (classes present only; mean of 3 seeds). FedBN keeps BatchNorm local.}
+\label{tab:fedbn}
+\centering
+\footnotesize
+\begin{tabular}{lrcccc}
+\hline
+Client & $n$ & FedBN & Central. & FedAvg & Local \\
+\hline
+vidir\_molemax & 600 & 0.692 & 0.757 & 0.679 & 0.567 \\
+vidir\_modern & 506 & 0.599 & 0.657 & 0.549 & 0.618 \\
+rosendahl & 330 & 0.683 & 0.619 & 0.611 & 0.544 \\
+vienna\_dias & 66 & 0.449 & 0.435 & 0.382 & 0.233 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,54 @@
+{
+  "backbone": "efficientnet_b0",
+  "classes": [
+    "nv",
+    "mel",
+    "bkl",
+    "bcc",
+    "akiec",
+    "vasc",
+    "df"
+  ],
+  "class_names": {
+    "nv": "Melanocytic nevus",
+    "mel": "Melanoma",
+    "bkl": "Benign keratosis-like lesion",
+    "bcc": "Basal cell carcinoma",
+    "akiec": "Actinic keratosis / intraepithelial carcinoma",
+    "vasc": "Vascular lesion",
+    "df": "Dermatofibroma"
+  },
+  "img_size": 224,
+  "resize": "PIL bilinear to 224x224, no crop",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "fedprox_mu": 0.001,
+  "models": {
+    "centralized": {
+      "file": "centralized_efficientnet_b0.pt",
+      "run": "centralized_efficientnet_b0_s42",
+      "test_macro_f1": 0.7288,
+      "test_bal_acc": 0.7179
+    },
+    "fedavg": {
+      "file": "fedavg_efficientnet_b0.pt",
+      "run": "fedavg_efficientnet_b0_s42",
+      "test_macro_f1": 0.6202,
+      "test_bal_acc": 0.6237
+    },
+    "fedprox": {
+      "file": "fedprox_efficientnet_b0.pt",
+      "run": "fedprox-mu0.001_efficientnet_b0_s42",
+      "test_macro_f1": 0.6599,
+      "test_bal_acc": 0.6633
+    }
+  }
+}
