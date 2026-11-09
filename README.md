@@ -5,12 +5,13 @@ A codebase for evaluating centralized and federated skin-lesion classification o
 ## Repository structure
 
 ```text
-.
 ├── data-understanding/
 │   ├── 01_ham10000_lesion_split.ipynb
 │   └── output-d.u/
 ├── dataset/
-│   └── HAM10000_metadata.csv
+│   ├── HAM10000_metadata.csv
+|   ├── ISIC2018_Task3_Training_LesionGroupings.csv
+|   └── ISIC2018_Task3_Training_GroundTruth/ (although we are not use this)
 ├── federated-learning/
 │   ├── 02_federated_client_partition.ipynb
 │   ├── federated-learning-dpl.ipynb

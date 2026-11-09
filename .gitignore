@@ -1,4 +1,7 @@
-/Dataset/ISIC2018_Task3_Test_Input
-/Dataset/ISIC2018_Task3_Training_Input
-/Dataset/ISIC2018_Task3_Validation_Input
+/dataset/ISIC2018_Task3_Test_Input
+/dataset/ISIC2018_Task3_Training_Input
+/dataset/ISIC2018_Task3_Validation_Input
+/dataset/ISIC2018_Task3_Test_GroundTruth
+/dataset/ISIC2018_Task3_Validation_GroundTruth
+/dataset/bonus
 /demo/.venv
