@@ -11,7 +11,7 @@ A codebase for evaluating centralized and federated skin-lesion classification o
 ├── dataset/
 │   ├── HAM10000_metadata.csv
 |   ├── ISIC2018_Task3_Training_LesionGroupings.csv
-|   └── ISIC2018_Task3_Training_GroundTruth/ (although we are not use this)
+|   └── ISIC2018_Task3_Training_GroundTruth/
 ├── federated-learning/
 │   ├── 02_federated_client_partition.ipynb
 │   ├── federated-learning-dpl.ipynb
